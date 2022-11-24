@@ -1,7 +1,7 @@
-package Models;
+package com.example.demo.Models;
 
-import Enums.InspecaoFrequencia;
-import Enums.InspecaoStatus;
+import com.example.demo.Enums.InspecaoFrequencia;
+import com.example.demo.Enums.InspecaoStatus;
 
 public class ObraInspecao {
     int Id;

@@ -1,16 +1,35 @@
-package Models;
+package com.example.demo.Models;
 
 import java.math.BigInteger;
 
 public class Obra {
     int Id;
-    String Nome;
-    BigInteger AnoConstruicao;
-    String Coordenacao;
-    String Gerencia;
-    String Diretoria;
-    String Outorga;
-    String Titularidade;
+    private String Nome;
+    private int AnoConstruicao;
+    private String Coordenacao;
+    private String Gerencia;
+    private String Diretoria;
+    private String Outorga;
+    private String Titularidade;
+
+    public Obra(int id, String nome, int anoConstruicao, String coordenacao, String gerencia, String diretoria, String outorga, String titularidade) {
+        Id = id;
+        Nome = nome;
+        AnoConstruicao = anoConstruicao;
+        Coordenacao = coordenacao;
+        Gerencia = gerencia;
+        Diretoria = diretoria;
+        Outorga = outorga;
+        Titularidade = titularidade;
+    }
+
+    public int getId() {
+        return Id;
+    }
+
+    public void setId(int id) {
+        Id = id;
+    }
 
     public String getNome() {
         return Nome;
@@ -20,11 +39,11 @@ public class Obra {
         Nome = nome;
     }
 
-    public BigInteger getAnoConstruicao() {
+    public int getAnoConstruicao() {
         return AnoConstruicao;
     }
 
-    public void setAnoConstruicao(BigInteger anoConstruicao) {
+    public void setAnoConstruicao(int anoConstruicao) {
         AnoConstruicao = anoConstruicao;
     }
 

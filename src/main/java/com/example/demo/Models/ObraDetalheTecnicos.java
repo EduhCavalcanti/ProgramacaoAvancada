@@ -1,7 +1,7 @@
-package Models;
+package com.example.demo.Models;
 
-import Enums.ObraRisco;
-import Enums.ObraTipo;
+import com.example.demo.Enums.ObraRisco;
+import com.example.demo.Enums.ObraTipo;
 
 public class ObraDetalheTecnicos {
     int Id;
@@ -9,20 +9,19 @@ public class ObraDetalheTecnicos {
     ObraRisco ObraRisco;
     Obra Obra;
 
-    public Enums.ObraTipo getObraTipo() {
-
+    public ObraTipo getObraTipo() {
         return ObraTipo;
     }
 
-    public void setObraTipo(Enums.ObraTipo obraTipo) {
+    public void setObraTipo(ObraTipo obraTipo) {
         ObraTipo = obraTipo;
     }
 
-    public Enums.ObraRisco getObraRisco() {
+    public ObraRisco getObraRisco() {
         return ObraRisco;
     }
 
-    public void setObraRisco(Enums.ObraRisco obraRisco) {
+    public void setObraRisco(ObraRisco obraRisco) {
         ObraRisco = obraRisco;
     }
 }
